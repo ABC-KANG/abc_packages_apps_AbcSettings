@@ -507,7 +507,7 @@
     <string name="anbi_title">Accidental touch</string>
     <string name="anbi_summary">Prevent interaction with navigation buttons while the screen is being touched</string>
 
-    <string name="screenshot_edit_app">Screenshot edit app</string>
-    <string name="screenshot_edit_app_summary">Choose which app should be launched when tapping on the screenshot notification edit button</string>
+    <string name="screenshot_edit_app">Screenshot editor</string>
+    <string name="screenshot_edit_app_summary">Select which image editor to use to edit screenshots</string>
     <string name="screenshot_edit_app_no_editor">No image editor available</string>
 </resources>

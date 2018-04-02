@@ -27,11 +27,15 @@ import com.android.settings.SettingsPreferenceFragment;
 
 import com.android.settings.development.DevelopmentSettings;
 
+import com.android.internal.utils.du.DUActionUtils;
+
 public class AbcSettings extends SettingsPreferenceFragment {
 
     private PreferenceCategory mLedsCategory;
     private PreferenceCategory mDeviceCategory;
+    private PreferenceCategory mInterfaceCategory;
     private Preference mChargingLeds;
+    private Preference mButtonSettings;
 
     @Override
     public void onCreate(Bundle icicle) {
@@ -41,10 +45,17 @@ public class AbcSettings extends SettingsPreferenceFragment {
         addPreferencesFromResource(R.xml.abc_settings_main);
         PreferenceScreen prefSet = getPreferenceScreen();
 
-        // DeviceParts
+	// DeviceParts
 	mDeviceCategory = (PreferenceCategory) findPreference("abc_sys");
         if (!DevelopmentSettings.isPackageInstalled(getActivity(), KEY_DEVICE_PART_PACKAGE_NAME)) {
             mDeviceCategory.removePreference(findPreference(KEY_DEVICE_PART));
+	}
+
+ 	// Buttons settings
+	mButtonSettings = (Preference) findPreference("buttons_options");
+	mInterfaceCategory = (PreferenceCategory) findPreference("abc_interface");
+        if (DUActionUtils.hasNavbarByDefault(getActivity())) {
+            mInterfaceCategory.removePreference(mButtonSettings);
 	}
 
         mLedsCategory = (PreferenceCategory) findPreference("abc_leds");

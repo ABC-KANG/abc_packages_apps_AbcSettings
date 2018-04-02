@@ -35,7 +35,6 @@ import com.android.settings.R;
 
 import com.android.internal.logging.nano.MetricsProto;
 import com.android.internal.utils.du.ActionConstants;
-import com.android.internal.utils.du.DUActionUtils;
 
 import com.abc.settings.ActionFragment;
 import com.abc.settings.preferences.CustomSeekBarPreference;
@@ -81,12 +80,9 @@ public class ButtonSettings extends ActionFragment implements OnPreferenceChange
         final Resources res = getResources();
         final ContentResolver resolver = getActivity().getContentResolver();
         final PreferenceScreen prefScreen = getPreferenceScreen();
-
-        final boolean needsNavbar = DUActionUtils.hasNavbarByDefault(getActivity());
         final PreferenceCategory hwkeyCat = (PreferenceCategory) prefScreen
                 .findPreference(CATEGORY_HWKEY);
         int keysDisabled = 0;
-        if (!needsNavbar) {
             mHwKeyDisable = (SwitchPreference) findPreference(HWKEY_DISABLE);
             keysDisabled = Settings.Secure.getIntForUser(getContentResolver(),
                     Settings.Secure.HARDWARE_KEYS_DISABLE, 0,
@@ -130,9 +126,6 @@ public class ButtonSettings extends ActionFragment implements OnPreferenceChange
                         mButtonBrightness_sw.setOnPreferenceChangeListener(this);
                     }
                 }
-        } else {
-            prefScreen.removePreference(hwkeyCat);
-        }
 
         // bits for hardware keys present on device
         final int deviceKeys = getResources().getInteger(

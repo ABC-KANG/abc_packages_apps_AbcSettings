@@ -292,6 +292,17 @@
     <string name="fling_keyboard_cursors_title">Управление курсором</string>
     <string name="fling_keyboard_cursors_move_summary">Зажмите с левой или с правой части панели навигации при открытой клавиатуре для перемещения курсора.\nКурсор будет двигаться до тех пор, пока вы не отпустите панель, единичное нажатие на панель вернет вас на главный экран.</string>
     <string name="fling_logo_opacity_title">Прозрачность логотипа Fling</string>
+    <string name="fling_factory_reset_title">Сброс настроек</string>
+    <string name="fling_factory_reset_confirm">Вы действительно хотите сбросить все пользовательские настройки Fling?</string>
+    <string name="fling_backup_current_config_title">Сохранить профиль</string>
+    <string name="fling_restore_config_title">Восстановить профиль</string>
+    <string name="fling_config_name_edit_dialog_title">Имя профиля Fling</string>
+    <string name="fling_config_name_edit_dialog_message">Введите название или оставьте поле пустым</string>
+    <string name="fling_config_dialog_title">Профили Fling</string>
+    <string name="fling_config_backup_success_toast">Профиль Fling успешно сохранен</string>
+    <string name="fling_config_restore_success_toast">Профиль Fling успешно восстановлен</string>
+    <string name="fling_config_backup_error_toast">Ошибка при сохранении профиля Fling</string>
+    <string name="fling_config_restore_error_toast">Ошибка при восстановлении профиля Fling</string>
 
     <!-- Pulse navigation bar music visualizer -->
     <string name="pulse_help_policy_notice_summary">Pulse не работает с некоторыми проигрывателями при прослушивании через динамик телефона</string>

@@ -146,17 +146,20 @@
     <string name="lockscreen_power_menu_disabled_title">Меню питания при блокировке</string>
     <string name="lockscreen_power_menu_disabled_summary">Отключить меню питания на защищенном экране блокировки</string>
 
-    <string name="recents_icon_pack_title">Набор значков</string>
-    <string name="recents_icon_pack_summary">Применить пользовательский набор значков для панели недваних приложений</string>
-    <string name="no_iconpacks_summary">Не установлено ни одного набора значков</string>
-    <string name="dialog_pick_iconpack_title">Выберите набор значков</string>
-    <string name="default_iconpack_title">Значки по умолчанию</string>
-
     <!-- Statusbar ticker -->
     <string name="ticker_mode_title">Старый вид уведомлений</string>
     <string name="ticker_disabled">Отключено</string>
     <string name="ticker_enabled">Бегущая строка для уведомлений</string>
     <string name="ticker_media_enabled">Бегущая строка для уведомлений и музыки</string>
+
+    <!-- AOSP Recents -->
+    <string name="stock_recents_title">Недавние приложения AOSP</string>
+
+    <string name="recents_icon_pack_title">Набор значков</string>
+    <string name="recents_icon_pack_summary">Применить пользовательский набор значков для панели недваних приложений</string>
+    <string name="no_iconpacks_summary">Не установлено ни одного набора значков</string>
+    <string name="dialog_pick_iconpack_title">Выберите набор значков</string>
+    <string name="default_iconpack_title">Значки по умолчанию</string>
 
     <!-- Recents panel settings -->
     <string name="show_clear_all_recents_button_title">Показывать кнопку «Очистить всё»</string>

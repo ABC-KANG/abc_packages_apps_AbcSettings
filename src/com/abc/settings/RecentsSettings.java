@@ -78,6 +78,7 @@ public class RecentsSettings extends SettingsPreferenceFragment implements
     private ListView mListView;
 
     private SwitchPreference mSlimToggle;
+    private SwitchPreference mClearAll;
     private Preference mStockIconPacks;
 
     @Override
@@ -87,12 +88,14 @@ public class RecentsSettings extends SettingsPreferenceFragment implements
         ContentResolver resolver = getActivity().getContentResolver();
 
         mStockIconPacks = (Preference) findPreference("recents_icon_pack");
+        mClearAll = (SwitchPreference) findPreference("show_clear_all_recents");
         mSlimToggle = (SwitchPreference) findPreference("use_slim_recents");
         boolean enabled = Settings.System.getIntForUser(
                 resolver, Settings.System.USE_SLIM_RECENTS, 0,
                 UserHandle.USER_CURRENT) == 1;
         mSlimToggle.setChecked(enabled);
         mStockIconPacks.setEnabled(!enabled);
+        mClearAll.setEnabled(!enabled);
         mSlimToggle.setOnPreferenceChangeListener(this);
 
         // clear all recents
@@ -118,6 +121,7 @@ public class RecentsSettings extends SettingsPreferenceFragment implements
                     Settings.System.USE_SLIM_RECENTS, value ? 1 : 0,
                     UserHandle.USER_CURRENT);
             mSlimToggle.setChecked(value);
+            mClearAll.setEnabled(!value);
             mStockIconPacks.setEnabled(!value);
             return true;
         }

@@ -44,10 +44,10 @@
 
     <string name="swap_volume_buttons_title">交换音量键方向</string>
     <string name="volume_keys_control_media_stream_title">音量键控制媒体音量</string>
-    <string name="volume_keys_control_media_stream_summary">强制使用音量键控制媒体流<</string>
+    <string name="volume_keys_control_media_stream_summary">强制使用音量键控制媒体流</string>
 
     <string name="status_bar_quick_qs_pulldown">快速下拉</string>
-    <string name="status_bar_quick_qs_pulldown_summary">>沿状态栏的右侧下拉直接打开快速设置面板</string>
+    <string name="status_bar_quick_qs_pulldown_summary">沿状态栏的右侧下拉直接打开快速设置面板</string>
 
     <string name="volume_rocker_music_controls_title">播放控制</string>
     <string name="volume_rocker_music_controls_summary">屏幕关闭时，长按音量键将搜寻音乐曲目</string>
@@ -104,7 +104,7 @@
     <string name="qs_brightness_slider_title">亮度滑块</string>
     <string name="qs_brightness_slider_summary">在快速设置面板上显示亮度滑块</string>
     <string name="vol_dnd_category_title">请勿打扰模式</string>
-    <string name="volbtn_down_zen_title">音量"－"键进入免打扰/string>
+    <string name="volbtn_down_zen_title">音量"－"键进入免打扰</string>
     <string name="volbtn_down_zen_summary">允许按住音量"－"键进入请勿打扰模式</string>
     <string name="volbtn_up_zen_title">音量"＋"键退出免打扰</string>
     <string name="volbtn_up_zen_summary">允许按住音量"＋"键退出请勿打扰模式</string>
@@ -137,7 +137,7 @@
 
     <!-- Power plug events -->
     <string name="wake_when_plugged_or_unplugged_title">充电唤醒</string>
-    <string name="wake_when_plugged_or_unplugged_summary">充电时保持设备唤醒<</string>
+    <string name="wake_when_plugged_or_unplugged_summary">充电时保持设备唤醒</string>
     <string name="vibration_on_charge_state_changed_title">充电振动</string>
     <string name="vibration_on_charge_state_changed_summary">连接或断开电源时振动</string>
 
@@ -201,7 +201,7 @@
     <string name="recent_panel_lefty_mode_title">显示在左侧边缘</string>
     <string name="recent_panel_lefty_mode_summary">在左侧边缘显示最近任务</string>
     <string name="reset">重置</string>
-	   <string name="profile_choose_app">选择应用</string>
+    <string name="profile_choose_app">选择应用</string>
     <string name="dialog_delete_title">删除</string>
     <string name="dialog_delete_message">确定删除选定的项目?</string>
     <string name="slim_blacklist_apps_cat_title">黑名单</string>
@@ -222,7 +222,7 @@
     <string name="navbar_mode">导航栏模式</string>
     <string name="navbar_mode_summary">选择要在设备上使用的导航栏模式</string>
     <string name="navbar_visibility">启用导航栏</string>
-    <string name="navigationbar_settings_title">导航栏/string>
+    <string name="navigationbar_settings_title">导航栏</string>
     <string name="bottom_nav_navigation_title">导航栏</string>
     <string name="navigationbar_settings_summary">自定义导航栏样式和行为</string>
     <string name="navbar_general_title">高级选项</string>
@@ -514,7 +514,7 @@
 
     <!-- Backlight on touch-->
     <string name="button_backlight_on_touch_only_title">触摸时点亮</string>
-    <string name="button_backlight_on_touch_only_summary">触摸屏幕时点亮按键背光(背光仍会受按钮超时影响)/string>
+    <string name="button_backlight_on_touch_only_summary">触摸屏幕时点亮按键背光(背光仍会受按钮超时影响)</string>
 
     <!-- ANBI -->
     <string name="anbi_title">防误触</string>

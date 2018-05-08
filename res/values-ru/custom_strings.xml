@@ -513,4 +513,9 @@
     <string name="screenshot_edit_app_summary">Выберите каким графическим редактором изменять снимки экрана</string>
     <string name="screenshot_edit_app_no_editor">На устройстве не установлено графических редакторов</string>
 
+    <string name="chooser_activity_blacklist_title">Черный список блока выбора приложений</string>
+    <string name="chooser_activity_blacklist_summary">Приложения, которые не будут отображаться при нажатии кнопки «Поделиться»</string>
+    <string name="chooser_activity_blacklist_cat_title">Черный список</string>
+    <string name="chooser_activity_blacklist_pref_title">Добавить приложение</string>
+    <string name="chooser_activity_blacklist_pref_summary">Нажмите здесь, чтобы добавить приложение; нажмите на добавленное приложение, чтобы убрать его из списка</string>
 </resources>

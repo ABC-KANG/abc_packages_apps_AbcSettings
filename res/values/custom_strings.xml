@@ -157,7 +157,7 @@
     <string name="ticker_media_enabled">Notification and music ticker</string>
 
     <!-- AOSP Recents -->
-    <string name="stock_recents_title">AOSP Recents</string>
+    <string name="stock_recents_title">AOSP recents</string>
 
     <string name="recents_icon_pack_title">Icon Pack</string>
     <string name="recents_icon_pack_summary">Apply a custom icon pack for Recents panel</string>

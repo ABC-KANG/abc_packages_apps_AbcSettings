@@ -433,9 +433,6 @@
     <string name="anbi_summary">Отключать сенсорные клавиши при одновременном использовании с экраном</string>
 
     <string name="notification_sound_vib_screen_on_title">Звук и вибрация уведомлений при включенном экране</string>
-    <string name="notification_sound_vib_screen_on_never">Никогда</string>
-    <string name="notification_sound_vib_screen_on_always">Всегда (по умолчанию)</string>
-    <string name="notification_sound_vib_screen_on_nomedia">Когда медиа не вопроизводится</string>
 
     <!-- Pixel kang -->
     <string name="force_ambient_for_media_pref_title">Функция «Now Playing»</string>

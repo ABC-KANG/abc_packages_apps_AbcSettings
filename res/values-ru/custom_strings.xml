@@ -516,5 +516,17 @@
     <string name="chooser_activity_blacklist_pref_title">Добавить приложение</string>
     <string name="chooser_activity_blacklist_pref_summary">Нажмите здесь, чтобы добавить приложение; нажмите на добавленное приложение, чтобы убрать его из списка</string>
 
-     <string name="color_picker_simple_dialog_title">Цвет индикатора уведомлений</string>
+    <string name="color_picker_simple_dialog_title">Цвет индикатора уведомлений</string>
+
+    <string name="lockscreen_clock_style_category_title">Стиль элементов экрана блокировки</string>
+    <string name="lockscreen_clock_selection_title">Стиль часов</string>
+    <string name="lockscreen_clock_selection_digital">По умолчанию</string>
+    <string name="lockscreen_clock_selection_digital_bold">Жирный</string>
+    <string name="lockscreen_clock_selection_analog">Аналоговые</string>
+    <string name="lockscreen_clock_selection_sammy">Sammy</string>
+    <string name="lockscreen_clock_selection_sammy_bold">Sammy (жирный)</string>
+    <string name="lockscreen_date_selection_title">Стиль даты</string>
+    <string name="lockscreen_date_selection_default">По умолчанию</string>
+    <string name="lockscreen_date_selection_str_box">Полупрозрачный блок</string>
+    <string name="lockscreen_date_selection_str_round">Полупрозрачный блок (закругленный)</string>
 </resources>

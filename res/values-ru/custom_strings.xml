@@ -432,7 +432,8 @@
     <string name="anbi_title">Случайное нажатие</string>
     <string name="anbi_summary">Отключать сенсорные клавиши при одновременном использовании с экраном</string>
 
-    <string name="notification_sound_vib_screen_on_title">Звук и вибрация уведомлений при включенном экране</string>
+    <string name="notification_sound_vib_screen_on_title">Звук уведомлений при включенном экране</string>
+    <string name="notification_sound_vib_screen_on_summary">Воспроизводить звук и вибрацию уведомлений при включенном экране</string>
 
     <!-- Pixel kang -->
     <string name="force_ambient_for_media_pref_title">Функция «Now Playing»</string>
@@ -521,11 +522,12 @@
     <string name="lockscreen_clock_style_category_title">Стиль элементов экрана блокировки</string>
     <string name="lockscreen_clock_selection_title">Стиль часов</string>
     <string name="lockscreen_clock_selection_digital">По умолчанию</string>
-    <string name="lockscreen_clock_selection_digital_bold">Жирный</string>
+    <string name="lockscreen_clock_selection_digital_bold">Жирные</string>
     <string name="lockscreen_clock_selection_analog">Аналоговые</string>
     <string name="lockscreen_clock_selection_sammy">Sammy</string>
-    <string name="lockscreen_clock_selection_sammy_bold">Sammy (жирный)</string>
+    <string name="lockscreen_clock_selection_sammy_bold">Sammy (жирные)</string>
     <string name="lockscreen_date_selection_title">Стиль даты</string>
+    <string name="lockscreen_date_selection_default_aosp">По умолчанию (меньше)</string>
     <string name="lockscreen_date_selection_default">По умолчанию</string>
     <string name="lockscreen_date_selection_str_box">Полупрозрачный блок</string>
     <string name="lockscreen_date_selection_str_round">Полупрозрачный блок (закругленный)</string>

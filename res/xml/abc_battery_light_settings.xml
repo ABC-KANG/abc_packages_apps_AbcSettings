@@ -18,18 +18,26 @@
         xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
     <com.abc.settings.preferences.SystemSettingSwitchPreference
+        android:key="battery_light_enabled"
+        android:title="@string/battery_light_enable"
+        android:defaultValue="true" />
+
+    <com.abc.settings.preferences.SystemSettingSwitchPreference
         android:key="battery_light_allow_on_dnd"
         android:title="@string/battery_light_allow_on_dnd_title"
-        android:defaultValue="false" />
+        android:defaultValue="false"
+        android:dependency="battery_light_enabled" />
 
     <com.abc.settings.preferences.SystemSettingSwitchPreference
         android:key="battery_light_low_blinking"
         android:title="@string/battery_light_low_blinking_title"
-        android:defaultValue="false" />
+        android:defaultValue="false"
+        android:dependency="battery_light_enabled" />
 
     <PreferenceCategory
         android:key="battery_light_cat"
-        android:title="@string/battery_light_cat">
+        android:title="@string/battery_light_cat"
+        android:dependency="battery_light_enabled" >
         <net.margaritov.preference.colorpicker.ColorPickerPreference
             android:key="battery_light_low_color"
             android:title="@string/battery_light_low_color"

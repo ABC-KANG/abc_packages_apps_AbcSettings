@@ -40,6 +40,7 @@ public class BatteryLightSettings extends SettingsPreferenceFragment implements
     private ColorPickerPreference mMediumColor;
     private ColorPickerPreference mFullColor;
     private ColorPickerPreference mReallyFullColor;
+    private SystemSettingSwitchPreference mBatteryLightEnabled;
     private SystemSettingSwitchPreference mLowBatteryBlinking;
 
     private PreferenceCategory mColorCategory;
@@ -61,6 +62,11 @@ public class BatteryLightSettings extends SettingsPreferenceFragment implements
         } else {
             prefSet.removePreference(mLowBatteryBlinking);
         }
+
+        mBatteryLightEnabled = (SystemSettingSwitchPreference)prefSet.findPreference("battery_light_enabled");
+        mBatteryLightEnabled.setChecked(Settings.System.getIntForUser(getContentResolver(),
+                        Settings.System.BATTERY_LIGHT_ENABLED, 1, UserHandle.USER_CURRENT) == 1);
+        mBatteryLightEnabled.setOnPreferenceChangeListener(this);
 
         if (getResources().getBoolean(com.android.internal.R.bool.config_multiColorBatteryLed)) {
             int color = Settings.System.getIntForUser(getContentResolver(),
@@ -135,6 +141,13 @@ public class BatteryLightSettings extends SettingsPreferenceFragment implements
                     Settings.System.BATTERY_LIGHT_LOW_BLINKING, value ? 1 : 0,
                     UserHandle.USER_CURRENT);
             mLowBatteryBlinking.setChecked(value);
+            return true;
+        } else if (preference == mBatteryLightEnabled) {
+            boolean value = (Boolean) newValue;
+            Settings.System.putIntForUser(getActivity().getContentResolver(),
+                    Settings.System.BATTERY_LIGHT_ENABLED, value ? 1 : 0,
+                    UserHandle.USER_CURRENT);
+            mBatteryLightEnabled.setChecked(value);
             return true;
         }
         return false;

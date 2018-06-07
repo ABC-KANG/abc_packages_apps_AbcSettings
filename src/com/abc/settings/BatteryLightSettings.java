@@ -51,7 +51,7 @@ public class BatteryLightSettings extends SettingsPreferenceFragment implements
         addPreferencesFromResource(R.xml.abc_battery_light_settings);
 
         PreferenceScreen prefSet = getPreferenceScreen();
-        mColorCategory = (PreferenceCategory) findPreference("battery_light_cat");
+        mColorCategory = (PreferenceCategory) findPreference("colors_section");
 
         mLowBatteryBlinking = (SystemSettingSwitchPreference)prefSet.findPreference("battery_light_low_blinking");
         if (getResources().getBoolean(

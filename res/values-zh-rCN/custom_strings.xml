@@ -82,7 +82,7 @@
     <!-- Battery light -->
     <string name="battery_light_allow_on_dnd_title">在勿扰模式下启用指示灯</string>
     <string name="battery_light_low_blinking_title">低电量时指示灯闪烁</string>
-    <string name="battery_light_cat">充电时电量指示灯颜色</string>
+    <string name="battery_light_color_title">充电时电量指示灯颜色</string>
     <string name="battery_light_low_color">低电量</string>
     <string name="battery_light_medium_color">中等电量</string>
     <string name="battery_light_full_color">接近满电</string>

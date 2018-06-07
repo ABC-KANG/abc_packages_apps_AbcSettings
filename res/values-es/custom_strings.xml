@@ -81,7 +81,7 @@
     <!-- Battery light -->
     <string name="battery_light_allow_on_dnd_title">Luz de batería en modo No Molestar</string>
     <string name="battery_light_low_blinking_title">Luz parpadeante con batería baja</string>
-    <string name="battery_light_cat">Luz de batería mientras carga</string>
+    <string name="battery_light_color_title">Luz de batería mientras carga</string>
     <string name="battery_light_low_color">Batería baja</string>
     <string name="battery_light_medium_color">Batería media</string>
     <string name="battery_light_full_color">Batería casi completa</string>

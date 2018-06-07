@@ -69,7 +69,7 @@
 
     <string name="battery_light_allow_on_dnd_title">Luce batteria durante Non Disturbare</string>
     <string name="battery_light_low_blinking_title">Luce lampeggiante per batteria scarica</string>
-    <string name="battery_light_cat">Colore luce batteria durante caricamento</string>
+    <string name="battery_light_color_title">Colore luce batteria durante caricamento</string>
     <string name="battery_light_low_color">Batteria scarica</string>
     <string name="battery_light_medium_color">Batteria media</string>
     <string name="battery_light_full_color">Batteria quasi carica</string>

@@ -80,10 +80,11 @@
     <string name="headset_connect_player_both">Any headset plugged in</string>
 
     <!-- Battery light -->
-    <string name="battery_light_enable">Enable battery light</string>
-    <string name="battery_light_allow_on_dnd_title">Battery light in Do Not Disturb mode</string>
-    <string name="battery_light_low_blinking_title">Blinking light on low battery</string>
-    <string name="battery_light_cat">Battery light color when charging</string>
+    <string name="battery_light_enable">Enable</string>
+    <string name="battery_light_general_title">General</string>
+    <string name="battery_light_allow_on_dnd_title">Battery light in «Do Not Disturb mode»</string>
+    <string name="battery_light_low_blinking_title">Pulse if battery low</string>
+    <string name="battery_light_color_title">Colors</string>
     <string name="battery_light_low_color">Low battery</string>
     <string name="battery_light_medium_color">Medium battery</string>
     <string name="battery_light_full_color">Almost full battery</string>

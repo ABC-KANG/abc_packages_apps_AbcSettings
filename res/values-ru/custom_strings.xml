@@ -76,10 +76,11 @@
     <string name="headset_connect_player_both">При подключении любой гарнитуры</string>
 
     <!-- Battery light -->
-    <string name="battery_light_enable">Индикация заряда батареи</string>
+    <string name="battery_light_enable">Включена</string>
+    <string name="battery_light_general_title">Общие</string>
     <string name="battery_light_allow_on_dnd_title">Включить светодиод в режиме «Не беспокоить»</string>
     <string name="battery_light_low_blinking_title">Мигать светодиодом при низком уровне заряда</string>
-    <string name="battery_light_cat">Цвет светодиода во время зарядки</string>
+    <string name="battery_light_color_title">Цвета</string>
     <string name="battery_light_low_color">Батарея разряжена</string>
     <string name="battery_light_medium_color">Заряжается</string>
     <string name="battery_light_full_color">Заряжена (90%)</string>

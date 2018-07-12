@@ -44,6 +44,7 @@ public class ButtonSettings extends ActionFragment implements OnPreferenceChange
     //Keys
     private static final String KEY_BUTTON_BRIGHTNESS = "button_brightness";
     private static final String KEY_BUTTON_BRIGHTNESS_SW = "button_brightness_sw";
+    private static final String KEY_BUTTON_BRIGHTNESS_TOUCH_ONLY = "button_backlight_on_touch_only";
     private static final String KEY_BACKLIGHT_TIMEOUT = "backlight_timeout";
     private static final String HWKEY_DISABLE = "hardware_keys_disable";
 
@@ -70,6 +71,7 @@ public class ButtonSettings extends ActionFragment implements OnPreferenceChange
     private ListPreference mBacklightTimeout;
     private CustomSeekBarPreference mButtonBrightness;
     private SwitchPreference mButtonBrightness_sw;
+    private SwitchPreference mButtonBrightnessTouchOnly;
     private SwitchPreference mHwKeyDisable;
 
     @Override
@@ -102,6 +104,9 @@ public class ButtonSettings extends ActionFragment implements OnPreferenceChange
             mButtonBrightness_sw =
                     (SwitchPreference) findPreference(KEY_BUTTON_BRIGHTNESS_SW);
 
+            mButtonBrightnessTouchOnly =
+                    (SwitchPreference) findPreference(KEY_BUTTON_BRIGHTNESS_TOUCH_ONLY);
+
                 if (mBacklightTimeout != null) {
                     mBacklightTimeout.setOnPreferenceChangeListener(this);
                     int BacklightTimeout = Settings.System.getInt(getContentResolver(),
@@ -121,8 +126,11 @@ public class ButtonSettings extends ActionFragment implements OnPreferenceChange
                 } else {
                     hwkeyCat.removePreference(mButtonBrightness);
                     if (mButtonBrightness_sw != null) {
-                        mButtonBrightness_sw.setChecked((Settings.System.getInt(getContentResolver(),
-                                Settings.System.BUTTON_BRIGHTNESS, 1) == 1));
+                        boolean enabled = (Settings.System.getInt(getContentResolver(),
+                                Settings.System.BUTTON_BRIGHTNESS, 1) == 1);
+                        mButtonBrightness_sw.setChecked(enabled);
+                        mButtonBrightnessTouchOnly.setEnabled(enabled);
+                        mBacklightTimeout.setEnabled(enabled);
                         mButtonBrightness_sw.setOnPreferenceChangeListener(this);
                     }
                 }
@@ -204,6 +212,9 @@ public class ButtonSettings extends ActionFragment implements OnPreferenceChange
             boolean value = (Boolean) newValue;
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.BUTTON_BRIGHTNESS, value ? 1 : 0);
+                    mButtonBrightness_sw.setChecked(value);
+                    mButtonBrightnessTouchOnly.setEnabled(value);
+                    mBacklightTimeout.setEnabled(value);
             return true;
         } else if (preference == mHwKeyDisable) {
             boolean value = (Boolean) newValue;

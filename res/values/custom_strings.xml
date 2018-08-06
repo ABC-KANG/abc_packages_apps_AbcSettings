@@ -226,7 +226,7 @@
     <string name="navbar_mode">Navigation mode</string>
     <string name="navbar_mode_summary">Select which navigation mode to use on your device</string>
     <string name="navbar_visibility">Allow navigation bar</string>
-    <string name="navigationbar_settings_title">Navigation bar</string>
+    <string name="navigationbar_settings_title">Navigation</string>
     <string name="bottom_nav_navigation_title">Navigation bar</string>
     <string name="navigationbar_settings_summary">Customize navigation style and behavior</string>
     <string name="navbar_general_title">Advanced</string>
@@ -546,4 +546,10 @@
     <string name="lockscreen_date_selection_default">Default</string>
     <string name="lockscreen_date_selection_str_box">Semi-transparent box</string>
     <string name="lockscreen_date_selection_str_round">Semi-transparent box (round)</string>
+
+    <!-- Navigation gestures -->
+    <string name="gesture_settings_title">Navigation gestures</string>
+    <string name="gesture_settings_summary">Use bottom swipe up gestures for navigation</string>
+    <string name="use_bottom_gesture_title">Enable gestures</string>
+    <string name="gesture_settings_info">Available gestures:\n\nBack\n- Swipe up on left or right side\n\nHome\n- Swipe up center\n\nRecent apps\n- Swipe up center and hold\n\n\nWorks best with navigation bar disabled.</string>
 </resources>

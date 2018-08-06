@@ -222,7 +222,7 @@
     <string name="navbar_mode">Режим навигации</string>
     <string name="navbar_mode_summary">Выбрать вид панели навигации</string>
     <string name="navbar_visibility">Включить панель навигации</string>
-    <string name="navigationbar_settings_title">Панель навигации</string>
+    <string name="navigationbar_settings_title">Настройки навигации</string>
     <string name="bottom_nav_navigation_title">Панель навигации</string>
     <string name="navigationbar_settings_summary">Настройка стиля панели навигации</string>
     <string name="navbar_general_title">Дополнительно</string>
@@ -534,4 +534,10 @@
     <string name="lockscreen_date_selection_default">По умолчанию</string>
     <string name="lockscreen_date_selection_str_box">Полупрозрачный блок</string>
     <string name="lockscreen_date_selection_str_round">Полупрозрачный блок (закругленный)</string>
+
+    <!-- Navigation gestures -->
+    <string name="gesture_settings_title">Навигация жестами</string>
+    <string name="gesture_settings_summary">Управление свайпами нижней части экрана</string>
+    <string name="use_bottom_gesture_title">Использовать жесты</string>
+    <string name="gesture_settings_info">Доступные жесты:\n\nНазад\n- Свайп вверх слева или справа\n\nДомой\n- Свайп вверх по центру экрана\n\nНедавние приложения\n- Свайп вверх по центру экрана и удержание\n\n\nЛучше всего работают с отключенной панелью навигации.</string>
 </resources>
